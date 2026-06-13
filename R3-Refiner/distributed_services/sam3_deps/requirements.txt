@@ -1,0 +1,6 @@
+# Runtime dependencies for the R3-Refiner SAM3 reward wrapper.
+# Install the SAM3 package and its model-specific dependencies separately.
+flask
+numpy
+Pillow
+torch

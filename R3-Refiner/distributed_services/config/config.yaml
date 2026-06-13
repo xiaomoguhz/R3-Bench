@@ -1,0 +1,84 @@
+# R3-Refiner training and service configuration.
+#
+# Fill in local model paths before launching services. Environment variables
+# already set in the shell take precedence over values loaded from this file.
+
+
+# 1. Service configuration
+# ============================================================================
+service:
+  # Base port numbers for each service.
+  edit_server_base_port: 5001
+  reward_server_base_port: 6001
+  sam3_reward_server_base_port: 7001
+  
+  # Local model paths. Set these in this file or export EDIT_MODEL_PATH /
+  # SELF_REWARD_MODEL_PATH before running deploy_services.sh.
+  edit_model_path: /path/to/BAGEL-7B-MoT
+  self_reward_model_path: /path/to/qwen_self_reward_checkpoint
+  # Self-reward serving backend. Use qwen2_5vl for Qwen2.5-VL
+  # checkpoints and qwen3vl for Qwen3-VL checkpoints.
+  self_reward_model_type: qwen2_5vl
+
+  # SAM3 resources, required only when reward_type includes sam3.
+  sam3_bpe_path: /path/to/sam3/bpe_simple_vocab_16e6.txt.gz
+  sam3_ckpt_path: /path/to/sam3/sam3.pt
+  sam3_metadata_jsonl: ""  # SAM3 metadata JSONL file path (optional)
+  
+  # Reward service type: self_reward, clip, sam3, or mixed.
+  reward_type: self_reward
+  reward_type_per_gpu: ""
+
+  # Example mixed-mode config (SAM3 plus self_reward):
+  # reward_type: mixed
+  # reward_type_per_gpu: "0:self_reward,1:self_reward,2:sam3,3:sam3"
+  
+  # GPU config.
+  gpus_per_node: 0  # 0 = auto-detect, >0 = fixed GPU count.
+  # Instances per GPU. A single number applies to all GPUs.
+  instances_per_gpu: 4
+
+  # Per-GPU example: "0:4,1:4,2:8,3:8"
+  # instances_per_gpu: "0:4,1:4,2:8,3:8"
+  
+  # Image edit model type: bagel or qwen_image_edit
+  edit_model_type: bagel
+  
+  # CLIP config (optional)
+  clip_module_path: ""  # Optional custom CLIP module path.
+  clip_model_path: ""   # Optional CLIP checkpoint path (.pt).
+  
+  # API mode toggle
+  use_api_mode: true
+  
+  # Threading config (controls Flask's threaded parameter)
+  edit_server_threaded: false  # Compute-intensive workload; disabled by default
+
+# ============================================================================
+# 2. API client configuration
+# ============================================================================
+api_client:
+  # Health-check config.
+  enable_health_check: true
+  health_check_failure_threshold: 5  # Consecutive failures before marking an endpoint unhealthy.
+  request_timeout: 180  # seconds; image editing can be slow.
+
+
+# ============================================================================
+# 3. Other configuration
+# ============================================================================
+other:
+  # HuggingFace endpoint. Leave empty for the default endpoint.
+  hf_endpoint: ""
+  
+  # WandB config used by VERL training logs.
+  wandb:
+    api_key: ""
+    mode: offline  # offline: log locally; online: sync to cloud
+  
+  # Python environment.
+  pythonunbuffered: 1
+  edit_conda_env: bagelfast   # Conda environment name for the edit service
+  reward_conda_env: ""        # Conda env for reward service; empty means use the current Python.
+  
+  project_root: "."  # repo root when scripts are run from the project directory

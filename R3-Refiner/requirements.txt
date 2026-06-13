@@ -1,0 +1,30 @@
+accelerate
+codetiming
+cache-dit
+diffusers
+einops
+flask
+gradio
+huggingface-hub
+jinja2
+numpy
+omegaconf
+opencv-python
+pillow
+psutil
+pyyaml
+qwen-vl-utils
+ray
+regex
+requests
+safetensors
+tensordict
+torch
+torchvision
+tqdm
+transformers
+vllm
+wandb
+
+# Optional CLIP reward server dependency:
+# pip install git+https://github.com/openai/CLIP.git

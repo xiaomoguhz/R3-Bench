@@ -1,0 +1,78 @@
+# ============================================================
+# Whitelist mode
+# Only the release artifacts listed below are tracked.
+# Everything else under the repository root is ignored.
+# ============================================================
+/*
+!/.gitignore
+!/.gitattributes
+!/LICENSE
+!/README.md
+!/setup.py
+!/requirements.txt
+!/r3bench
+!/r3bench/**
+!/scripts
+!/scripts/**
+!/examples
+!/examples/**
+!/assets
+!/assets/**
+!/R3-Refiner
+!/R3-Refiner/**
+
+# ============================================================
+# Rules below still apply inside whitelisted subdirectories.
+# ============================================================
+
+# Secrets
+.env
+*.env
+
+# IDE / OS
+.vscode/
+.cursor/
+.idea/
+.gradio/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Logs / runs / artifacts
+paper.pdf
+logs/
+results/
+tmp_results/
+eval_results/
+wandb/
+exps/
+*.log
+*.pth
+*.ckpt
+*.safetensors
+
+# R3-Refiner local runtime files
+/R3-Refiner/distributed_services/logs/
+/R3-Refiner/distributed_services/config/*_endpoints.txt
+/R3-Refiner/distributed_services/config/service_endpoints.env
+/R3-Refiner/examples/data/demo_train_images.zip
+/R3-Refiner/examples/data/images/*
+!/R3-Refiner/examples/data/images/.gitkeep
+
+# Local model / data caches (repo-root only — must not shadow the
+# r3bench/models source package or any vendored modeling code)
+/models/
+/checkpoints/

@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "r3-refiner"
+version = "0.1.0"
+description = "Reason, Reflect, Rectify for reflective visual generation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+
+[tool.setuptools.packages.find]
+include = ["verl*"]

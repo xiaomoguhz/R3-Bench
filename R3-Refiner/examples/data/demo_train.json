@@ -1,0 +1,681 @@
+[
+  {
+    "prompt": "a photo of a toothbrush and a skis",
+    "images": [
+      "demo_train/object/0000.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"object\", \"prompt\": \"a photo of a toothbrush and a skis\", \"nouns\": [\"toothbrush\", \"skis\"]}"
+  },
+  {
+    "prompt": "a photo of a tie and an elephant",
+    "images": [
+      "demo_train/object/0001.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"object\", \"prompt\": \"a photo of a tie and an elephant\", \"nouns\": [\"tie\", \"elephant\"]}"
+  },
+  {
+    "prompt": "a photo of an oven and a car",
+    "images": [
+      "demo_train/object/0002.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"object\", \"prompt\": \"a photo of an oven and a car\", \"nouns\": [\"oven\", \"car\"]}"
+  },
+  {
+    "prompt": "a photo of a chair and a couch",
+    "images": [
+      "demo_train/object/0003.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"object\", \"prompt\": \"a photo of a chair and a couch\", \"nouns\": [\"chair\", \"couch\"]}"
+  },
+  {
+    "prompt": "a photo of a bird and a tennis racket",
+    "images": [
+      "demo_train/object/0004.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"object\", \"prompt\": \"a photo of a bird and a tennis racket\", \"nouns\": [\"bird\", \"tennis racket\"]}"
+  },
+  {
+    "prompt": "a photo of a towel and a mouse",
+    "images": [
+      "demo_train/object/0005.jpg"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"object\", \"prompt\": \"a photo of a towel and a mouse\", \"nouns\": [\"towel\", \"mouse\"]}"
+  },
+  {
+    "prompt": "a photo of a lawn mower and a fan",
+    "images": [
+      "demo_train/object/0006.jpg"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"object\", \"prompt\": \"a photo of a lawn mower and a fan\", \"nouns\": [\"lawn mower\", \"fan\"]}"
+  },
+  {
+    "prompt": "a photo of a teddy bear and a fire hydrant",
+    "images": [
+      "demo_train/object/0007.jpg"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"object\", \"prompt\": \"a photo of a teddy bear and a fire hydrant\", \"nouns\": [\"teddy bear\", \"fire hydrant\"]}"
+  },
+  {
+    "prompt": "a photo of a broccoli and a tie",
+    "images": [
+      "demo_train/object/0008.jpg"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"object\", \"prompt\": \"a photo of a broccoli and a tie\", \"nouns\": [\"broccoli\", \"tie\"]}"
+  },
+  {
+    "prompt": "A snowy outdoor scene featuring green leafy plants covered in frost, white snow on the ground, and a brown animal partially hidden among the foliage.",
+    "images": [
+      "demo_train/object/0009.jpg"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"object\", \"prompt\": \"A snowy outdoor scene featuring green leafy plants covered in frost, white snow on the ground, and a brown animal partially hidden among the foliage.\", \"nouns\": [\"leafy plants\", \"snow\", \"animal\", \"foliage\"]}"
+  },
+  {
+    "prompt": "Three white flowers with multiple petals and green centers are attached to a brown stem; two elongated green leaves extend from the stem; the background is out of focus with green and brown hues.",
+    "images": [
+      "demo_train/object/0010.jpg"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"object\", \"prompt\": \"Three white flowers with multiple petals and green centers are attached to a brown stem; two elongated green leaves extend from the stem; the background is out of focus with green and brown hues.\", \"nouns\": [\"flowers\", \"stem\", \"leaves\"]}"
+  },
+  {
+    "prompt": "A light blue vintage car is parked in a parking lot surrounded by various modern vehicles; buildings and trees are visible in the background.",
+    "images": [
+      "demo_train/object/0011.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"object\", \"prompt\": \"A light blue vintage car is parked in a parking lot surrounded by various modern vehicles; buildings and trees are visible in the background.\", \"nouns\": [\"vintage car\", \"parking lot\", \"vehicles\", \"buildings\", \"trees\"]}"
+  },
+  {
+    "prompt": "A single cupcake with white frosting and small purple and green garnishes sits on a white plate with red floral patterns; a sprig of similar garnish lies in front of the cupcake.",
+    "images": [
+      "demo_train/object/0012.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"object\", \"prompt\": \"A single cupcake with white frosting and small purple and green garnishes sits on a white plate with red floral patterns; a sprig of similar garnish lies in front of the cupcake.\", \"nouns\": [\"cupcake\", \"frosting\", \"garnishes\", \"plate\"]}"
+  },
+  {
+    "prompt": "a photo of a pink computer mouse and a white skateboard",
+    "images": [
+      "demo_train/color/0013.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"color\", \"prompt\": \"a photo of a pink computer mouse and a white skateboard\", \"nouns\": [\"computer mouse\", \"skateboard\"], \"attr_nouns\": [\"pink computer mouse\", \"white skateboard\"]}"
+  },
+  {
+    "prompt": "a photo of a red bus and a pink sandwich",
+    "images": [
+      "demo_train/color/0014.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"color\", \"prompt\": \"a photo of a red bus and a pink sandwich\", \"nouns\": [\"bus\", \"sandwich\"], \"attr_nouns\": [\"red bus\", \"pink sandwich\"]}"
+  },
+  {
+    "prompt": "a photo of a brown tennis racket and a red cow",
+    "images": [
+      "demo_train/color/0015.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"color\", \"prompt\": \"a photo of a brown tennis racket and a red cow\", \"nouns\": [\"tennis racket\", \"cow\"], \"attr_nouns\": [\"brown tennis racket\", \"red cow\"]}"
+  },
+  {
+    "prompt": "a red book and a brown cat",
+    "images": [
+      "demo_train/color/0016.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"color\", \"prompt\": \"a red book and a brown cat\", \"nouns\": [\"book\", \"cat\"], \"attr_nouns\": [\"red book\", \"brown cat\"]}"
+  },
+  {
+    "prompt": "a brown cat and a yellow dog",
+    "images": [
+      "demo_train/color/0017.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"color\", \"prompt\": \"a brown cat and a yellow dog\", \"nouns\": [\"cat\", \"dog\"], \"attr_nouns\": [\"brown cat\", \"yellow dog\"]}"
+  },
+  {
+    "prompt": "a brown bird and a red giraffe",
+    "images": [
+      "demo_train/color/0018.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"color\", \"prompt\": \"a brown bird and a red giraffe\", \"nouns\": [\"bird\", \"giraffe\"], \"attr_nouns\": [\"brown bird\", \"red giraffe\"]}"
+  },
+  {
+    "prompt": "a photo of a yellow stapler and a blue razor",
+    "images": [
+      "demo_train/color/0019.jpg"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"color\", \"prompt\": \"a photo of a yellow stapler and a blue razor\", \"nouns\": [\"stapler\", \"razor\"], \"attr_nouns\": [\"yellow stapler\", \"blue razor\"]}"
+  },
+  {
+    "prompt": "a photo of a pink cat and a white computer mouse",
+    "images": [
+      "demo_train/color/0020.jpg"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"color\", \"prompt\": \"a photo of a pink cat and a white computer mouse\", \"nouns\": [\"cat\", \"computer mouse\"], \"attr_nouns\": [\"pink cat\", \"white computer mouse\"]}"
+  },
+  {
+    "prompt": "a photo of a blue teddy bear and a black toilet",
+    "images": [
+      "demo_train/color/0021.jpg"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"color\", \"prompt\": \"a photo of a blue teddy bear and a black toilet\", \"nouns\": [\"teddy bear\", \"toilet\"], \"attr_nouns\": [\"blue teddy bear\", \"black toilet\"]}"
+  },
+  {
+    "prompt": "a photo of a purple bowl",
+    "images": [
+      "demo_train/color/0022.jpg"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"color\", \"prompt\": \"a photo of a purple bowl\", \"nouns\": [\"bowl\"], \"attr_nouns\": [\"purple bowl\"]}"
+  },
+  {
+    "prompt": "a photo of a purple envelope",
+    "images": [
+      "demo_train/color/0023.jpg"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"color\", \"prompt\": \"a photo of a purple envelope\", \"nouns\": [\"envelope\"], \"attr_nouns\": [\"purple envelope\"]}"
+  },
+  {
+    "prompt": "a photo of an orange desktop computer",
+    "images": [
+      "demo_train/color/0024.jpg"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"color\", \"prompt\": \"a photo of an orange desktop computer\", \"nouns\": [\"desktop computer\"], \"attr_nouns\": [\"orange desktop computer\"]}"
+  },
+  {
+    "prompt": "a rectangular shelf and a pyramidal bookend",
+    "images": [
+      "demo_train/shape/0025.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"shape\", \"prompt\": \"a rectangular shelf and a pyramidal bookend\", \"nouns\": [\"shelf\", \"bookend\"], \"attr_nouns\": [\"rectangular shelf\", \"pyramidal bookend\"]}"
+  },
+  {
+    "prompt": "a diamond necklace and a round ring",
+    "images": [
+      "demo_train/shape/0026.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"shape\", \"prompt\": \"a diamond necklace and a round ring\", \"nouns\": [\"necklace\", \"ring\"], \"attr_nouns\": [\"diamond necklace\", \"round ring\"]}"
+  },
+  {
+    "prompt": "a diamond ring and a triangular jewelry box",
+    "images": [
+      "demo_train/shape/0027.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"shape\", \"prompt\": \"a diamond ring and a triangular jewelry box\", \"nouns\": [\"ring\", \"box\"], \"attr_nouns\": [\"diamond ring\", \"triangular jewelry box\"]}"
+  },
+  {
+    "prompt": "a conical wizard hat and a triangular magic book",
+    "images": [
+      "demo_train/shape/0028.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"shape\", \"prompt\": \"a conical wizard hat and a triangular magic book\", \"nouns\": [\"hat\", \"book\"], \"attr_nouns\": [\"conical wizard hat\", \"triangular magic book\"]}"
+  },
+  {
+    "prompt": "a pyramidal paperweight and a teardrop pen",
+    "images": [
+      "demo_train/shape/0029.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"shape\", \"prompt\": \"a pyramidal paperweight and a teardrop pen\", \"nouns\": [\"paperweight\", \"pen\"], \"attr_nouns\": [\"pyramidal paperweight\", \"teardrop pen\"]}"
+  },
+  {
+    "prompt": "a diamond engagement ring and a conical wedding band",
+    "images": [
+      "demo_train/shape/0030.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"shape\", \"prompt\": \"a diamond engagement ring and a conical wedding band\", \"nouns\": [\"ring\", \"band\"], \"attr_nouns\": [\"diamond engagement ring\", \"conical wedding band\"]}"
+  },
+  {
+    "prompt": "a circular plate and a triangular napkin",
+    "images": [
+      "demo_train/shape/0031.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"shape\", \"prompt\": \"a circular plate and a triangular napkin\", \"nouns\": [\"plate\", \"napkin\"], \"attr_nouns\": [\"circular plate\", \"triangular napkin\"]}"
+  },
+  {
+    "prompt": "an oval picture frame and a rectangular photograph",
+    "images": [
+      "demo_train/shape/0032.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"shape\", \"prompt\": \"an oval picture frame and a rectangular photograph\", \"nouns\": [\"frame\", \"photograph\"], \"attr_nouns\": [\"oval picture frame\", \"rectangular photograph\"]}"
+  },
+  {
+    "prompt": "a cubic dice and a cylindrical pen holder",
+    "images": [
+      "demo_train/shape/0033.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"shape\", \"prompt\": \"a cubic dice and a cylindrical pen holder\", \"nouns\": [\"dice\", \"pen holder\"], \"attr_nouns\": [\"cubic dice\", \"cylindrical pen holder\"]}"
+  },
+  {
+    "prompt": "a spherical lamp and a rectangular lampshade",
+    "images": [
+      "demo_train/shape/0034.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"shape\", \"prompt\": \"a spherical lamp and a rectangular lampshade\", \"nouns\": [\"lamp\", \"lampshade\"], \"attr_nouns\": [\"spherical lamp\", \"rectangular lampshade\"]}"
+  },
+  {
+    "prompt": "a spherical snowball and a conical Santa hat",
+    "images": [
+      "demo_train/shape/0035.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"shape\", \"prompt\": \"a spherical snowball and a conical Santa hat\", \"nouns\": [\"snowball\", \"hat\"], \"attr_nouns\": [\"spherical snowball\", \"conical Santa hat\"]}"
+  },
+  {
+    "prompt": "a cubic block and a pyramidal building set",
+    "images": [
+      "demo_train/shape/0036.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"shape\", \"prompt\": \"a cubic block and a pyramidal building set\", \"nouns\": [\"block\", \"building\"], \"attr_nouns\": [\"cubic block\", \"pyramidal building\"]}"
+  },
+  {
+    "prompt": "a tall giraffe and a short penguin",
+    "images": [
+      "demo_train/shape/0037.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"shape\", \"prompt\": \"a tall giraffe and a short penguin\", \"nouns\": [\"giraffe\", \"penguin\"], \"attr_nouns\": [\"tall giraffe\", \"short penguin\"]}"
+  },
+  {
+    "prompt": "a fabric pillow and a leather jacket",
+    "images": [
+      "demo_train/texture/0038.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"texture\", \"prompt\": \"a fabric pillow and a leather jacket\", \"nouns\": [\"pillow\", \"jacket\"], \"attr_nouns\": [\"fabric pillow\", \"leather jacket\"]}"
+  },
+  {
+    "prompt": "The plastic shower curtain and fluffy bath mat rest on the metallic hooks in the bathroom.",
+    "images": [
+      "demo_train/texture/0039.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"texture\", \"prompt\": \"The plastic shower curtain and fluffy bath mat rest on the metallic hooks in the bathroom.\", \"nouns\": [\"curtain\", \"mat\", \"hook\", \"bathroom\"], \"attr_nouns\": [\"plastic shower curtain\", \"fluffy bath mat\", \"metallic hook\"]}"
+  },
+  {
+    "prompt": "a rubber ball and a metallic watch",
+    "images": [
+      "demo_train/texture/0040.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"texture\", \"prompt\": \"a rubber ball and a metallic watch\", \"nouns\": [\"ball\", \"watch\"], \"attr_nouns\": [\"rubber ball\", \"metallic watch\"]}"
+  },
+  {
+    "prompt": "a plastic cutlery and a metallic key",
+    "images": [
+      "demo_train/texture/0041.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"texture\", \"prompt\": \"a plastic cutlery and a metallic key\", \"nouns\": [\"cutlery\", \"key\"], \"attr_nouns\": [\"plastic cutlery\", \"metallic key\"]}"
+  },
+  {
+    "prompt": "The fluffy pillow and wooden headboard support the leather headrest in the bedroom.",
+    "images": [
+      "demo_train/texture/0042.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"texture\", \"prompt\": \"The fluffy pillow and wooden headboard support the leather headrest in the bedroom.\", \"nouns\": [\"pillow\", \"headboard\", \"headrest\", \"bedroom\"], \"attr_nouns\": [\"fluffy pillow\", \"wooden headboard\", \"leather headrest\"]}"
+  },
+  {
+    "prompt": "a metallic desk lamp and a fabric pants",
+    "images": [
+      "demo_train/texture/0043.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"texture\", \"prompt\": \"a metallic desk lamp and a fabric pants\", \"nouns\": [\"lamp\", \"pants\"], \"attr_nouns\": [\"metallic desk lamp\", \"fabric pant\"]}"
+  },
+  {
+    "prompt": "rubber gloves and a metallic fork",
+    "images": [
+      "demo_train/texture/0044.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"texture\", \"prompt\": \"rubber gloves and a metallic fork\", \"nouns\": [\"glove\", \"fork\"], \"attr_nouns\": [\"rubber glove\", \"metallic fork\"]}"
+  },
+  {
+    "prompt": "a fabric dress and a leather bag",
+    "images": [
+      "demo_train/texture/0045.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"texture\", \"prompt\": \"a fabric dress and a leather bag\", \"nouns\": [\"dress\", \"bag\"], \"attr_nouns\": [\"fabric dress\", \"leather bag\"]}"
+  },
+  {
+    "prompt": "a fabric rug and a leather bag",
+    "images": [
+      "demo_train/texture/0046.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"texture\", \"prompt\": \"a fabric rug and a leather bag\", \"nouns\": [\"rug\", \"bag\"], \"attr_nouns\": [\"fabric rug\", \"leather bag\"]}"
+  },
+  {
+    "prompt": "The fluffy dice and metallic keychain hang from the wooden rearview mirror in the car.",
+    "images": [
+      "demo_train/texture/0047.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"texture\", \"prompt\": \"The fluffy dice and metallic keychain hang from the wooden rearview mirror in the car.\", \"nouns\": [\"dice\", \"keychain\", \"mirror\", \"car\"], \"attr_nouns\": [\"fluffy dice\", \"metallic keychain\", \"wooden rearview mirror\"]}"
+  },
+  {
+    "prompt": "rubber gloves and a fabric bag",
+    "images": [
+      "demo_train/texture/0048.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"texture\", \"prompt\": \"rubber gloves and a fabric bag\", \"nouns\": [\"glove\", \"bag\"], \"attr_nouns\": [\"rubber glove\", \"fabric bag\"]}"
+  },
+  {
+    "prompt": "a plastic cutlery and a metallic watch",
+    "images": [
+      "demo_train/texture/0049.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"texture\", \"prompt\": \"a plastic cutlery and a metallic watch\", \"nouns\": [\"cutlery\", \"watch\"], \"attr_nouns\": [\"plastic cutlery\", \"metallic watch\"]}"
+  },
+  {
+    "prompt": "a cat on the right of a phone",
+    "images": [
+      "demo_train/spatial/0050.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"spatial\", \"prompt\": \"a cat on the right of a phone\", \"nouns\": [\"cat\", \"phone\"], \"spatial_info\": {\"obj1\": \"cat\", \"obj2\": \"phone\", \"locality\": \"on the right of\"}}"
+  },
+  {
+    "prompt": "a photo of a bowl right of a teddy bear",
+    "images": [
+      "demo_train/spatial/0051.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"spatial\", \"prompt\": \"a photo of a bowl right of a teddy bear\", \"nouns\": [\"bowl\", \"teddy bear\"], \"spatial_info\": {\"obj1\": \"bowl\", \"obj2\": \"teddy bear\", \"locality\": \"on the right of\"}}"
+  },
+  {
+    "prompt": "a dog on the right of a bicycle",
+    "images": [
+      "demo_train/spatial/0052.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"spatial\", \"prompt\": \"a dog on the right of a bicycle\", \"nouns\": [\"dog\", \"bicycle\"], \"spatial_info\": {\"obj1\": \"dog\", \"obj2\": \"bicycle\", \"locality\": \"on the right of\"}}"
+  },
+  {
+    "prompt": "a photo of a toilet left of a toothbrush",
+    "images": [
+      "demo_train/spatial/0053.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"spatial\", \"prompt\": \"a photo of a toilet left of a toothbrush\", \"nouns\": [\"toilet\", \"toothbrush\"], \"spatial_info\": {\"obj1\": \"toilet\", \"obj2\": \"toothbrush\", \"locality\": \"on the left of\"}}"
+  },
+  {
+    "prompt": "a photo of a person right of a snowboard",
+    "images": [
+      "demo_train/spatial/0054.jpg"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"spatial\", \"prompt\": \"a photo of a person right of a snowboard\", \"nouns\": [\"person\", \"snowboard\"], \"spatial_info\": {\"obj1\": \"person\", \"obj2\": \"snowboard\", \"locality\": \"on the right of\"}}"
+  },
+  {
+    "prompt": "a photo of a bicycle above a handbag",
+    "images": [
+      "demo_train/spatial/0055.jpg"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"spatial\", \"prompt\": \"a photo of a bicycle above a handbag\", \"nouns\": [\"bicycle\", \"handbag\"], \"spatial_info\": {\"obj1\": \"bicycle\", \"obj2\": \"handbag\", \"locality\": \"on the top of\"}}"
+  },
+  {
+    "prompt": "a photo of a towel right of a spade",
+    "images": [
+      "demo_train/spatial/0056.jpg"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"spatial\", \"prompt\": \"a photo of a towel right of a spade\", \"nouns\": [\"towel\", \"spade\"], \"spatial_info\": {\"obj1\": \"towel\", \"obj2\": \"spade\", \"locality\": \"on the right of\"}}"
+  },
+  {
+    "prompt": "a photo of an oven above a cat",
+    "images": [
+      "demo_train/spatial/0057.jpg"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"spatial\", \"prompt\": \"a photo of an oven above a cat\", \"nouns\": [\"oven\", \"cat\"], \"spatial_info\": {\"obj1\": \"oven\", \"obj2\": \"cat\", \"locality\": \"on the top of\"}}"
+  },
+  {
+    "prompt": "A silhouette of multiple trees with varying branch structures is set against a gradient orange sky, with two bright light sources partially obscured by the branches.",
+    "images": [
+      "demo_train/spatial/0058.jpg"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"spatial\", \"prompt\": \"A silhouette of multiple trees with varying branch structures is set against a gradient orange sky, with two bright light sources partially obscured by the branches.\", \"nouns\": [\"trees\", \"branches\", \"sky\", \"light sources\"], \"spatial_info\": {\"obj1\": \"light sources\", \"obj2\": \"branches\", \"locality\": \"near\"}}"
+  },
+  {
+    "prompt": "Three bicycles are parked against a black metal railing overlooking a canal lined with green trees and buildings. A tall tower is visible in the distance at the end of the canal. Several boats are docked along the canal.",
+    "images": [
+      "demo_train/spatial/0059.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"spatial\", \"prompt\": \"Three bicycles are parked against a black metal railing overlooking a canal lined with green trees and buildings. A tall tower is visible in the distance at the end of the canal. Several boats are docked along the canal.\", \"nouns\": [\"bicycles\", \"railing\", \"canal\", \"trees\", \"buildings\", \"tower\", \"boats\"], \"spatial_info\": {\"obj1\": \"bicycles\", \"obj2\": \"railing\", \"locality\": \"near\"}}"
+  },
+  {
+    "prompt": "A wide pedestrian street lined with buildings on both sides; numerous people walking in various directions; banners hanging from poles on both sides of the street; trees with green foliage on the left side; a domed building visible in the background at the end of the street.",
+    "images": [
+      "demo_train/spatial/0060.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"spatial\", \"prompt\": \"A wide pedestrian street lined with buildings on both sides; numerous people walking in various directions; banners hanging from poles on both sides of the street; trees with green foliage on the left side; a domed building visible in the background at the end of the street.\", \"nouns\": [\"pedestrian street\", \"buildings\", \"people\", \"banners\", \"poles\", \"trees\", \"domed building\"], \"spatial_info\": {\"obj1\": \"buildings\", \"obj2\": \"pedestrian street\", \"locality\": \"on side of\"}}"
+  },
+  {
+    "prompt": "a photo of four kites",
+    "images": [
+      "demo_train/numeracy/0061.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"numeracy\", \"prompt\": \"a photo of four kites\", \"nouns\": [\"kite\"], \"numeracy_info\": [{\"obj_name\": \"kite\", \"num\": 4}]}"
+  },
+  {
+    "prompt": "four desks, two hamburgers, two helicopters, and a microphone were in the hangar",
+    "images": [
+      "demo_train/numeracy/0062.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"numeracy\", \"prompt\": \"four desks, two hamburgers, two helicopters, and a microphone were in the hangar\", \"nouns\": [\"desk\", \"hamburger\", \"helicopter\", \"microphone\"], \"numeracy_info\": [{\"obj_name\": \"desk\", \"num\": 4}, {\"obj_name\": \"hamburger\", \"num\": 2}, {\"obj_name\": \"helicopter\", \"num\": 2}, {\"obj_name\": \"microphone\", \"num\": 1}]}"
+  },
+  {
+    "prompt": "a photo of three umbrellas",
+    "images": [
+      "demo_train/numeracy/0063.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"numeracy\", \"prompt\": \"a photo of three umbrellas\", \"nouns\": [\"umbrella\"], \"numeracy_info\": [{\"obj_name\": \"umbrella\", \"num\": 3}]}"
+  },
+  {
+    "prompt": "one bird and four chairs",
+    "images": [
+      "demo_train/numeracy/0064.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"numeracy\", \"prompt\": \"one bird and four chairs\", \"nouns\": [\"bird\", \"chair\"], \"numeracy_info\": [{\"obj_name\": \"bird\", \"num\": 1}, {\"obj_name\": \"chair\", \"num\": 4}]}"
+  },
+  {
+    "prompt": "a photo of four buckets",
+    "images": [
+      "demo_train/numeracy/0065.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"numeracy\", \"prompt\": \"a photo of four buckets\", \"nouns\": [\"bucket\"], \"numeracy_info\": [{\"obj_name\": \"bucket\", \"num\": 4}]}"
+  },
+  {
+    "prompt": "a photo of two paintings",
+    "images": [
+      "demo_train/numeracy/0066.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"numeracy\", \"prompt\": \"a photo of two paintings\", \"nouns\": [\"painting\"], \"numeracy_info\": [{\"obj_name\": \"painting\", \"num\": 2}]}"
+  },
+  {
+    "prompt": "a photo of a brown ski and an orange knife",
+    "images": [
+      "demo_train/numeracy/0067.jpg"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"numeracy\", \"prompt\": \"a photo of a brown ski and an orange knife\", \"nouns\": [\"ski\", \"knife\"], \"attr_nouns\": [\"brown ski\", \"orange knife\"], \"numeracy_info\": [{\"obj_name\": \"ski\", \"num\": 1}, {\"obj_name\": \"knife\", \"num\": 1}]}"
+  },
+  {
+    "prompt": "a photo of three surfboards",
+    "images": [
+      "demo_train/numeracy/0068.jpg"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"numeracy\", \"prompt\": \"a photo of three surfboards\", \"nouns\": [\"surfboard\"], \"numeracy_info\": [{\"obj_name\": \"surfboard\", \"num\": 3}]}"
+  },
+  {
+    "prompt": "a photo of three hair dryers",
+    "images": [
+      "demo_train/numeracy/0069.jpg"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"numeracy\", \"prompt\": \"a photo of three hair dryers\", \"nouns\": [\"hair dryer\"], \"numeracy_info\": [{\"obj_name\": \"hair dryer\", \"num\": 3}]}"
+  },
+  {
+    "prompt": "a photo of four sheeps",
+    "images": [
+      "demo_train/numeracy/0070.jpg"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"numeracy\", \"prompt\": \"a photo of four sheeps\", \"nouns\": [\"sheep\"], \"numeracy_info\": [{\"obj_name\": \"sheep\", \"num\": 4}]}"
+  },
+  {
+    "prompt": "a photo of two zebras",
+    "images": [
+      "demo_train/numeracy/0071.jpg"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"numeracy\", \"prompt\": \"a photo of two zebras\", \"nouns\": [\"zebra\"], \"numeracy_info\": [{\"obj_name\": \"zebra\", \"num\": 2}]}"
+  },
+  {
+    "prompt": "a photo of three hello kittys",
+    "images": [
+      "demo_train/numeracy/0072.jpg"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"numeracy\", \"prompt\": \"a photo of three hello kittys\", \"nouns\": [\"hello kitty\"], \"numeracy_info\": [{\"obj_name\": \"hello kitty\", \"num\": 3}]}"
+  },
+  {
+    "prompt": "The painter is using a palette knife to apply thick layers of paint to a canvas.",
+    "images": [
+      "demo_train/non/0073.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"non\", \"prompt\": \"The painter is using a palette knife to apply thick layers of paint to a canvas.\", \"nouns\": [\"palette knife\", \"paint\", \"canvas\"]}"
+  },
+  {
+    "prompt": "A person is walking with a friend and catching up on old times.",
+    "images": [
+      "demo_train/non/0074.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"non\", \"prompt\": \"A person is walking with a friend and catching up on old times.\", \"nouns\": [\"person\", \"friend\"]}"
+  },
+  {
+    "prompt": "A chef is tossing a pizza in the air before putting it in the oven.",
+    "images": [
+      "demo_train/non/0075.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"non\", \"prompt\": \"A chef is tossing a pizza in the air before putting it in the oven.\", \"nouns\": [\"pizza\", \"oven\"]}"
+  },
+  {
+    "prompt": "A man is holding a book and studying for a test.",
+    "images": [
+      "demo_train/non/0076.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"non\", \"prompt\": \"A man is holding a book and studying for a test.\", \"nouns\": [\"man\", \"book\", \"test\"]}"
+  },
+  {
+    "prompt": "A dog is barking at a squirrel and trying to chase it away.",
+    "images": [
+      "demo_train/non/0077.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"non\", \"prompt\": \"A dog is barking at a squirrel and trying to chase it away.\", \"nouns\": [\"dog\", \"squirrel\"]}"
+  },
+  {
+    "prompt": "The chef stirred the soup in the pot, carefully adding spices to taste.",
+    "images": [
+      "demo_train/non/0078.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"non\", \"prompt\": \"The chef stirred the soup in the pot, carefully adding spices to taste.\", \"nouns\": [\"chef\", \"soup\", \"pot\", \"spice\"]}"
+  },
+  {
+    "prompt": "A woman is playing with her dog at the park.",
+    "images": [
+      "demo_train/non/0079.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"non\", \"prompt\": \"A woman is playing with her dog at the park.\", \"nouns\": [\"woman\", \"dog\", \"park\"]}"
+  },
+  {
+    "prompt": "A woman is speaking to her child in a gentle tone.",
+    "images": [
+      "demo_train/non/0080.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"non\", \"prompt\": \"A woman is speaking to her child in a gentle tone.\", \"nouns\": [\"woman\", \"child\"]}"
+  },
+  {
+    "prompt": "A man is playing soccer in the park.",
+    "images": [
+      "demo_train/non/0081.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"non\", \"prompt\": \"A man is playing soccer in the park.\", \"nouns\": [\"man\", \"soccer\", \"park\"]}"
+  },
+  {
+    "prompt": "A spider is crawling up a wall.",
+    "images": [
+      "demo_train/non/0082.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"non\", \"prompt\": \"A spider is crawling up a wall.\", \"nouns\": [\"spider\", \"wall\"]}"
+  },
+  {
+    "prompt": "A pet owner is snuggling with their furry friend, enjoying their companionship and love.",
+    "images": [
+      "demo_train/non/0083.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"non\", \"prompt\": \"A pet owner is snuggling with their furry friend, enjoying their companionship and love.\", \"nouns\": [\"pet owner\", \"friend\"]}"
+  },
+  {
+    "prompt": "A person is looking at a mural and admiring its colors.",
+    "images": [
+      "demo_train/non/0084.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"non\", \"prompt\": \"A person is looking at a mural and admiring its colors.\", \"nouns\": [\"mural\"]}"
+  },
+  {
+    "prompt": "The sweet chocolate chip cookie crumbled on the crunchy crust and the soft ice cream.",
+    "images": [
+      "demo_train/complex/0085.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"complex\", \"prompt\": \"The sweet chocolate chip cookie crumbled on the crunchy crust and the soft ice cream.\", \"nouns\": [\"cookie\", \"crust\", \"ice cream\"]}"
+  },
+  {
+    "prompt": "The cold snowman stood on the icy lawn and the wet pavement.",
+    "images": [
+      "demo_train/complex/0086.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"complex\", \"prompt\": \"The cold snowman stood on the icy lawn and the wet pavement.\", \"nouns\": [\"snowman\", \"lawn\", \"pavement\"]}"
+  },
+  {
+    "prompt": "The soft pillow was on top of the hard bed.",
+    "images": [
+      "demo_train/complex/0087.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"complex\", \"prompt\": \"The soft pillow was on top of the hard bed.\", \"nouns\": [\"pillow\", \"bed\"], \"spatial_info\": {\"obj1\": \"pillow\", \"obj2\": \"bed\", \"locality\": \"on the top of\"}}"
+  },
+  {
+    "prompt": "The heavy backpack weighed down the strong shoulders and the weak back.",
+    "images": [
+      "demo_train/complex/0088.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"complex\", \"prompt\": \"The heavy backpack weighed down the strong shoulders and the weak back.\", \"nouns\": [\"backpack\", \"shoulder\", \"back\"]}"
+  },
+  {
+    "prompt": "The brown boots were next to the black sandals.",
+    "images": [
+      "demo_train/complex/0089.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"complex\", \"prompt\": \"The brown boots were next to the black sandals.\", \"nouns\": [\"boots\", \"sandals\"], \"spatial_info\": {\"obj1\": \"boots\", \"obj2\": \"sandals\", \"locality\": \"next to\"}}"
+  },
+  {
+    "prompt": "The square mirror was hung above the black vanity.",
+    "images": [
+      "demo_train/complex/0090.png"
+    ],
+    "ground_truth": "{\"answer\": false, \"category\": \"complex\", \"prompt\": \"The square mirror was hung above the black vanity.\", \"nouns\": [\"mirror\", \"vanity\"], \"spatial_info\": {\"obj1\": \"mirror\", \"obj2\": \"vanity\", \"locality\": \"on the top of\"}}"
+  },
+  {
+    "prompt": "The square mirror was hung above the white sink.",
+    "images": [
+      "demo_train/complex/0091.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"complex\", \"prompt\": \"The square mirror was hung above the white sink.\", \"nouns\": [\"mirror\", \"sink\"], \"spatial_info\": {\"obj1\": \"mirror\", \"obj2\": \"sink\", \"locality\": \"on the top of\"}}"
+  },
+  {
+    "prompt": "The warm, inviting glow of the fireplace flickered in the cozy, dimly lit living room, as the family gathered around for a night in.",
+    "images": [
+      "demo_train/complex/0092.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"complex\", \"prompt\": \"The warm, inviting glow of the fireplace flickered in the cozy, dimly lit living room, as the family gathered around for a night in.\", \"nouns\": [\"fireplace\", \"room\", \"family\"]}"
+  },
+  {
+    "prompt": "The sleek, aerodynamic design of the sports car hugged the curves of the road, a thrilling ride of speed and precision.",
+    "images": [
+      "demo_train/complex/0093.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"complex\", \"prompt\": \"The sleek, aerodynamic design of the sports car hugged the curves of the road, a thrilling ride of speed and precision.\", \"nouns\": [\"car\", \"road\"]}"
+  },
+  {
+    "prompt": "The black shoes were next to the brown boots.",
+    "images": [
+      "demo_train/complex/0094.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"complex\", \"prompt\": \"The black shoes were next to the brown boots.\", \"nouns\": [\"shoes\", \"boots\"], \"spatial_info\": {\"obj1\": \"shoes\", \"obj2\": \"boots\", \"locality\": \"next to\"}}"
+  },
+  {
+    "prompt": "The prickly cactus stood tall on the dry sand and the rocky terrain.",
+    "images": [
+      "demo_train/complex/0095.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"complex\", \"prompt\": \"The prickly cactus stood tall on the dry sand and the rocky terrain.\", \"nouns\": [\"cactus\", \"sand\", \"terrain\"]}"
+  },
+  {
+    "prompt": "The bright red rose contrasted with the dull grey pavement.",
+    "images": [
+      "demo_train/complex/0096.png"
+    ],
+    "ground_truth": "{\"answer\": true, \"category\": \"complex\", \"prompt\": \"The bright red rose contrasted with the dull grey pavement.\", \"nouns\": [\"rose\", \"pavement\"]}"
+  }
+]

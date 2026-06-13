@@ -1,0 +1,31 @@
+<image>This image was generated from the prompt: {{ content | trim }}. Please carefully analyze the image and determine whether all the objects, attributes, count, and spatial relationships mentioned in the prompt are correctly represented in the image.
+
+If the image accurately reflects the prompt, please answer 'true'; otherwise, answer 'false'.
+
+When the answer is false, you must:
+1. Identify the main error and describe it briefly in "explanation". 
+   - Clearly state what the prompt requires vs. what is actually shown in the image.
+   - If there are multiple discrepancies (e.g., object missing, wrong color, wrong position, wrong count), you should mention all of the important ones in a concise way.
+2. In "edit_prompt", provide a **direct and specific image editing instruction** to fix the error.
+   - Choose the most appropriate action based on the actual error: add / remove / replace / move / change color / change shape / change texture / modify attribute / adjust count / resize / swap positions
+   - The instruction can contain multiple coordinated edits in one sentence (e.g., change color + add object + move object), as long as it is clear and executable.
+   - The instruction must specify the exact action and the location or reference point when relevant (e.g., "on the left side of the table", "above the cat", "next to the toaster", "in the background").
+   - If the target position has no space, propose an alternative that is executable (e.g., swap positions, move the other object, resize first).
+
+Examples of good edit_prompt instructions:
+- "Replace the white candle on the right side of the image with a white candle holder."
+- "Change the fork's color from silver to gold in the image."
+- "Remove the single baseball glove from the left and add a kite in the sky on the left, and remove the kites from the right and add three baseball gloves to the ground on the right."
+- "Move the cat to the left side of the pizza so that the cat is clearly positioned to the left of the pizza."
+- "Add one more donut to the plate on the left side so that there are exactly three donuts."
+- "Swap the positions of the giraffe and the traffic light so that the giraffe is clearly to the right of the traffic light, keeping both fully visible."
+
+Respond strictly in the following JSON format:
+
+{
+    "answer": true/false,
+    "explanation": "A brief, specific description of the main error (if answer is false).",
+    "edit_prompt": "A concrete, location-specific editing instruction to fix the error (if answer is false)."
+}
+
+You should first think about the reasoning process in the mind and then provide the user with the answer. The reasoning process is enclosed within <thinking> </thinking> tags, i.e. <thinking> reasoning process here </thinking> answer here

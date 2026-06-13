@@ -1,0 +1,27 @@
+<image>This image was generated from the prompt: {{ content | trim }}. Please carefully analyze the image and determine whether all the objects, attributes, and spatial relationships mentioned in the prompt are correctly represented in the image.
+
+If the image accurately reflects the prompt, please answer 'true'; otherwise, answer 'false'.
+
+When the answer is false, you must:
+1. Identify the main error and describe it briefly in "explanation".
+2. In "edit_prompt", provide a **concrete image editing instruction** to fix the error.
+   - Choose the most appropriate action based on the actual error: add / remove / replace / move / change color / modify attribute.
+   - The instruction must specify the exact action and the location or reference point (e.g., "replace the white candle on the right side with a white candle holder", "change the fork's color from silver to gold", "remove the pink toy vehicle attached to the airplane's nose").
+   - Do not give vague instructions such as "add more bottles" or "ensure the count is correct". Be precise and actionable.
+   - Do not copy the template placeholder text. Write a real, specific instruction that addresses the actual error you identified.
+
+Examples of good edit_prompt instructions:
+- "Replace the white candle on the right side of the image with a white candle holder."
+- "Change the fork's color from silver to gold."
+- "Remove the pink toy vehicle attached to the airplane's nose and add a pink toaster next to the airplane."
+- "Change the orange's color from orange to green."
+
+Respond strictly in the following JSON format:
+
+{
+    "answer": true/false,
+    "explanation": "A brief, specific description of the main error (if answer is false).",
+    "edit_prompt": "A concrete, location-specific editing instruction to fix the error (if answer is false)."
+}
+
+You should first think about the reasoning process in the mind and then provide the user with the answer. The reasoning process is enclosed within <think> </think> tags, i.e. <think> reasoning process here </think> answer here

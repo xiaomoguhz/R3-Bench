@@ -1,0 +1,29 @@
+# R3Bench Requirements
+
+# Core dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.49.0
+qwen-vl-utils>=0.0.8
+accelerate>=0.27.0
+pillow>=10.0.0
+tqdm>=4.65.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# API clients
+openai>=1.0.0
+httpx>=0.25.0
+aiohttp>=3.9.0
+
+# vLLM for serving the judges (the version we reproduced judging with)
+vllm==0.12.0
+
+# Image processing
+diffusers>=0.27.0
+
+# Utilities
+pyyaml>=6.0
+python-dotenv>=1.0.0
